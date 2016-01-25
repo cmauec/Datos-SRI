@@ -1,0 +1,40 @@
+*{
+	box-sizing:border-box;
+}
+body,html{
+	height: 100%;
+}
+body{
+	padding: 20px;
+	background-color: #c4c4c4;
+}
+input[type="text"]{
+	width: 100%!important;
+}
+.box-filter{
+	width: 20%;
+	margin-right: 15px;
+	overflow: auto;
+}
+.result{
+	width: 80%;
+	height: 100%;
+	overflow: auto;
+}
+.loading{
+	width:100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1000;
+	color: #fff;
+	display: none;
+	text-align: center;
+	padding-top: 30px;
+}
+main{
+	display: flex;
+	height: 100%;
+}

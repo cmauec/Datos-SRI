@@ -1,0 +1,33 @@
+application: datos-sri
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /static
+  static_dir: static
+
+- url: /api/(.*)
+  script: api.\1.app
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: ssl
+  version: latest
+
+- name: jinja2
+  version: latest
+
+- name: pycrypto
+  version: latest
