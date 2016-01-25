@@ -66,3 +66,5 @@ target/
 
 # Index App Engine
 index.yaml
+config.json
+secret.pem
